@@ -1,4 +1,4 @@
-# .NET MAUI Blazor app + Idntityserver4 / duende
+# .NET MAUI Blazor app Authentication with Idntityserver4 / duende
 
 
 ## Screenshot
