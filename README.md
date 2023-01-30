@@ -9,3 +9,22 @@ start browser-based authentication flows, which listen for a callback to a speci
 ### Screenshot
 ![Screenshot](ScreenshotAndroid1.png)
 
+
+### Client Configuration
+```
+    new ClientEntity
+    {
+        ClientId = "mobile-app",
+        AllowedGrantTypes = GrantTypes.Code,
+        RequirePkce = true,
+        RequireClientSecret = false,
+        AllowedScopes =
+        {
+            IdentityServerConstants.StandardScopes.OpenId,
+            IdentityServerConstants.StandardScopes.Profile
+        },
+        RedirectUris = { "myapp://" },
+        PostLogoutRedirectUris = { "myapp://" }
+    }
+```
+
