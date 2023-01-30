@@ -10,7 +10,7 @@ start browser-based authentication flows, which listen for a callback to a speci
 ![Screenshot](ScreenshotAndroid1.png)
 
 
-### Client Configuration
+### IdntityServer Client Configuration
 ```
     new ClientEntity
     {
