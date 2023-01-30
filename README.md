@@ -1,4 +1,4 @@
-# mobile-app
+# .NET MAUI Blazor app + Idntityserver4 / duende
 
 
 ## Screenshot
