@@ -1,0 +1,31 @@
+﻿@page "/"
+@using MobileApp.Presentation.Auth
+@inject AuthService authService
+
+<h1>Hello, @UserName!</h1>
+
+<br />
+
+<h3>User Claims:</h3>
+@foreach (var claim in authService.User.Claims)
+{
+    <div>@claim.Type: @claim.Value</div>
+}
+
+<br />
+
+<h3>Access Token:</h3>
+<textarea class="form-control" rows="10">
+    @authService.AccessToken
+</textarea>
+
+
+@code {
+
+    private string UserName { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        UserName = authService.User.FindFirst(_ => _.Type == "given_name").Value;
+    }
+}
+
