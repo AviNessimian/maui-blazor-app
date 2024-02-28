@@ -6,10 +6,6 @@ This sample shows how to use the [IdentityModel.OidcClient FOSS library](https:/
 
 start browser-based authentication flows, which listen for a callback to a specific URL registered to the app.
 
-### Screenshot
-![Screenshot](ScreenshotAndroid1.png)
-
-
 ### IdntityServer Client Configuration
 ```
     new ClientEntity
